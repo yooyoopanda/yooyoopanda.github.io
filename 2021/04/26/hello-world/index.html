@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="title:我的第一篇博客–hexo搭建和使用welcome to the blog of yooyoopanda.I will record everything which insprira me or interest me in my work.i know it might had lots of mistakes in my blog for my low skills .still">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/04/26/hello-world/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title:我的第一篇博客–hexo搭建和使用welcome to the blog of yooyoopanda.I will record everything which insprira me or interest me in my work.i know it might had lots of mistakes in my blog for my low skills .still">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-26T02:51:55.205Z">
+<meta property="article:modified_time" content="2021-04-26T08:49:16.596Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/26/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2021-04-26T02:51:55.205Z" itemprop="datePublished">2021-04-26</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h2 id="title-我的第一篇博客–hexo搭建和使用"><a href="#title-我的第一篇博客–hexo搭建和使用" class="headerlink" title="title:我的第一篇博客–hexo搭建和使用"></a>title:我的第一篇博客–hexo搭建和使用</h2><p>welcome to the blog of yooyoopanda.I will record everything which insprira me or interest me in my work.i know it might had lots of mistakes in my blog for my low skills .still，i decise to puts all the detail online for any rethink.<br>and in the section, i will detail how i use the hexo to built up my blog setting.<br>此次的hexo搭建和使用是借鉴了b站up主codesheep的教程“手把手教你从0开始搭建自己的个人博客 |无坑版视频教程| hexo”<br>参考链接:<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.recommend_more_video.-1">https://www.bilibili.com/video/BV1Yb411a7ty/?spm_id_from=333.788.recommend_more_video.-1</a><br>说明：codesheep在macos下配置，本次是在win10下配置</p>
+<h2 id="Precondition-Step-x0000-先决条件"><a href="#Precondition-Step-x0000-先决条件" class="headerlink" title="Precondition  Step x0000 先决条件"></a>Precondition  Step x0000 先决条件</h2><p>###安装Node.js,进入&lt;nodejs.org&gt;选择lts版本安装即可；<br>用WIN+r 输入cmd唤出终端，在终端输入 <code>node -v</code>和<code>npm -v</code>确认是否安装成功</p>
+<h2 id="Step-x0001-安装hexo"><a href="#Step-x0001-安装hexo" class="headerlink" title="Step x0001 安装hexo"></a>Step x0001 安装hexo</h2><p>在终端中输入命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装hexo<code>hexo -v</code>确定是否确实安装成功</p>
+<h3 id="Step-x0002-建立blog目录"><a href="#Step-x0002-建立blog目录" class="headerlink" title="Step x0002 建立blog目录"></a>Step x0002 建立blog目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">D:\&gt;<span class="built_in">cd</span> 个人博客搭建</span><br><span class="line">D:\个人博客搭建&gt;mkdir blog</span><br><span class="line">D:\个人博客搭建&gt;<span class="built_in">cd</span> blog</span><br><span class="line">D:\个人博客搭建\blog&gt;hexo init</span><br></pre></td></tr></table></figure>
+<p>初始化成功：<code>INFO  Start blogging with Hexo!</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">D:\个人博客搭建\blog&gt;hexo s</span><br><span class="line">D:\个人博客搭建\blog&gt;hexo n <span class="string">&quot;我的第一篇博客文章&quot;</span></span><br><span class="line">D:\个人博客搭建\blog&gt;<span class="built_in">cd</span> <span class="built_in">source</span></span><br><span class="line">D:\个人博客搭建\blog\<span class="built_in">source</span>&gt;dir</span><br><span class="line"> D:\个人博客搭建\blog\<span class="built_in">source</span>\_posts 的目录</span><br><span class="line"></span><br><span class="line">2021/04/26  10:57    &lt;DIR&gt;          .</span><br><span class="line">2021/04/26  10:57    &lt;DIR&gt;          ..</span><br><span class="line">2021/04/26  10:51               876 hello-world.md</span><br><span class="line">2021/04/26  10:57                75 我的第一篇博客文章.md</span><br></pre></td></tr></table></figure>
+<p>用typora或者vs打开并编辑保存.md文件然后<code>hexo clean</code>、<code>hexo g</code>产生静态的文件，用<code>hexo s</code>在localhost:4000上可以预览；</p>
+<h3 id="部署到github"><a href="#部署到github" class="headerlink" title="部署到github"></a>部署到github</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">D:\个人博客搭建\blog&gt;npm install --save hexo-deployer-gi //安装git插件</span><br></pre></td></tr></table></figure>
+<p>在github中新建仓库：yooyoopanda.github.io<br>更改_config.yml文件的deploy:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/yooyoopanda/yooyoopanda.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">D:\个人博客搭建\blog&gt;git config --global user.email XXX //</span><br><span class="line">D:\个人博客搭建\blog&gt;git config --global user.name XXX</span><br><span class="line">D:\个人博客搭建\blog&gt;hexo d</span><br><span class="line">D:\个人博客搭建\blog&gt;hexo clean</span><br><span class="line">D:\个人博客搭建\blog&gt;hexo g</span><br></pre></td></tr></table></figure>
+<p>上传到yooyoopanda.github.io</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/26/hello-world/" data-id="cknydkw750000fktj51xnaglz" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/04/27/%E9%BB%91%E5%AE%A2%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0%E9%98%85%E8%AF%BBday01/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          黑客渗透笔记阅读day01
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/27/%E9%BB%91%E5%AE%A2%E6%B8%97%E9%80%8F%E7%AC%94%E8%AE%B0%E9%98%85%E8%AF%BBday01/">黑客渗透笔记阅读day01</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/26/hello-world/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
